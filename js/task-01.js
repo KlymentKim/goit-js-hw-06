@@ -12,6 +12,6 @@ console.log(`Elements: `);
 console.log(`Category: Technologies`);
 console.log(`Elements: `);
 
- navAllEliments.forEach((item) => console.log(item));
+//  navAllEliments.forEach((item) => console.log(item));
 // console.log(navEl);
 // console.log(navEli);
