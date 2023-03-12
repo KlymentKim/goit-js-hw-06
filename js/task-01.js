@@ -11,7 +11,7 @@ itemElements.forEach(item => {
     console.log(`Category:`, titleName);
 
     // кількість елементів в категорії (усіх <li>, вкладених в нього).
-    const categoryElements = document.querySelectorAll('ul li').length;
+    const categoryElements = document.querySelectorAll('.item').length;
     console.log(`Elements:`, categoryElements);
 
 });
