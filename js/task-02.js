@@ -22,4 +22,4 @@ const listAddNewElements = ingredients.map((ingredient) => {
   return li;
 });
 ul.append(...listAddNewElements);
-console.log(listAddNewElements);
+console.log(ul);
