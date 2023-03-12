@@ -1,11 +1,11 @@
-const htmlElem = document.documentElement;
-console.log(htmlElem);
-// const navEl = document.querySelector('ul');
-// const navEli = document.querySelector('li');
-const head = document.head;
-console.log(head);
-const body = document.body;
-console.log(body);
+// const htmlElem = document.documentElement;
+// console.log(htmlElem);
+// // const navEl = document.querySelector('ul');
+// // const navEli = document.querySelector('li');
+// const head = document.head;
+// console.log(head);
+// const body = document.body;
+// console.log(body);
 // const list = (body).children;
 // console.log(list);
 
