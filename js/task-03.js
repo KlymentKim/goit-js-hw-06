@@ -20,6 +20,6 @@ const images = [
 const ul = document.querySelector('.gallery');
 console.log(ul);
 const gallery = images.reduce((acc, { url, alt }) =>
-  acc + `<li><img src = "${url} alt= "${alt}" </li>`,'');
+  acc + `<li><img src = "${url} alt= "${alt}"</li>`,'');
 
 ul.insertAdjacentHTML(`beforeend`, gallery);
