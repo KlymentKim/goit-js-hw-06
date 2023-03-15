@@ -4,15 +4,15 @@
 const validationInput = document.getElementById('validation-input');
 console.log(validationInput);
 
-validationInput.addEventListener('input',() => {
-    const inputLength = parseInt(validationInput.getAttribute('data-length'));
-    const valueLength = validationInput.value;
+validationInput.addEventListener('input',(event) => {
+    const inputLength = parseInt(event.target.getAttribute('data-length'));
+    const valueLength = event.target.value;
 
     if (valueLength ===inputLength) {
-        validationInput.classList.add('valid');
-        validationInput.remove('invalid');
+        event.target.classList.add('valid');
+        event.target.classList.remove('invalid');
     } else {
-        validationInput.classList.add('invalid');
-        validationInput.classList.remove('valid');
+         event.target.classList.add('invalid');
+         event.target.classList.remove('valid');
     }
 });
