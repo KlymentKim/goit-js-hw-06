@@ -9,5 +9,5 @@ const nameInPut = document.getElementById('name-input');
 const nameOutPut = document.getElementById('name-output');
 
 nameInPut.addEventListener('input', () => {
- nameOutPut.textContent = nameInPut.value || 'Anonymous'
+    nameOutPut.textContent = nameInPut.value || 'Anonymous';
 });
