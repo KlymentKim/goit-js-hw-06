@@ -16,9 +16,12 @@ const ul = document.querySelector('#ingredients');
 // const arrayNew = [];
 const listAddNewElements = ingredients.map((ingredient) => {
   const li = document.createElement('li');
+  // li.style.color = 'green';
   li.textContent = ingredient;
   li.classList.add('item');
   return li;
 });
 ul.append(...listAddNewElements);
 console.log(ul);
+
+
