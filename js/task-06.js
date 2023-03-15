@@ -8,7 +8,7 @@ validationInput.addEventListener('input',(event) => {
     const inputLength = parseInt(event.target.getAttribute('data-length'));
     const valueLength = event.target.value;
 
-    if (valueLength ===inputLength) {
+    if (valueLength === inputLength) {
         event.target.classList.add('valid');
         event.target.classList.remove('invalid');
     } else {
