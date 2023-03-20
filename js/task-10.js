@@ -19,11 +19,10 @@ function getRandomHexColor() {
 
 const createBoxes = amount => {
   const createDiv = document.createElement('div');
+};
   const buttonAdd = document.querySelector('[data-create]');
   const buttonRemove = document.querySelector('[data-destroy]');
-
   buttonAdd.addEventListener('click', (event) => {
     event.preventDefault();
-    
+
   });
-};
