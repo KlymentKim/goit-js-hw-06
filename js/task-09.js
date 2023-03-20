@@ -6,8 +6,8 @@ const getRandomHexColor = () =>{
     .padStart(6, 0)}`;
 }
 
-
 const div = document.querySelector('.widget');
+console.log(div);
 const span = document.querySelector('.color');
 const button = document.querySelector('.change-color');
 
