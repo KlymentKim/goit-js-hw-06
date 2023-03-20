@@ -11,7 +11,8 @@ const div = document.querySelector('.widget');
 const span = document.querySelector('.color');
 const button = document.querySelector('.change-color');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', (event) => {
+  event.preventDefault();
   const setColor = getRandomHexColor();
   document.body.style.backgroundColor = setColor;
   span.textContent = setColor;
