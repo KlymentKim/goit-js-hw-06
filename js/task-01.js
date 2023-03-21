@@ -19,5 +19,26 @@ itemElements.forEach(item => {
 
 });
 
+// const array = [];
+// for (let i = 0; i < itemElements.length; i+=1){
+//     array.push(itemElements[i]);
+// }
+// console.log(`ArrayItems0: `, array);
+
+// const uotPutArray = Array.from(itemElements);
+// console.log(`ArrayItems1: `, uotPutArray.length);
+
+// const secondViewArray = Array.prototype.slice.call(itemElements);
+// console.log(`ArrayItems2: `, secondViewArray.length);
+
+// const thirArray = [...itemElements];
+// console.log(`ArrayItems3: `, thirArray.length);
+
+// itemElements._proto_ = Array.prototype;
+// console.log(`ArrayItems4: `,itemElements.length);
+
+
+
+
 
 
