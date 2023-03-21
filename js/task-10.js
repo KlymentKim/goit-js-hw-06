@@ -18,19 +18,38 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
+const buttonAdd = document.querySelector('[data-create]');
+const buttonRemove = document.querySelector('[data-destroy]');
+const input = document.querySelector('input');
+
 const createBoxes = amount => {
-  const createDiv = document.createElement('div');
-  return createDiv;
+  const getDivBoxes = document.getElementById('boxes');
+  const boxSize = 30;
+  getDivBoxes.innerHTML = '';
+
+  for (let i = 0; i < amount; i+=1){
+    const createDiv = document.createElement('div');
+    createDiv.style.width = `${boxSize + i * 10} px`;
+    createDiv.style.height = `${boxSize + i * 10} px`;
+    createDiv.style.backgroundColor = getRandomHexColor();
+    // добавляємо у кінець створені елементи у DIV
+    getDivBoxes.appendChild(createDiv);
+    return getDivBoxes;
+}
+ 
 };
 const destroyBoxes = () =>{
   const deleteDiv = document.querySelector('#boxes');
-  deleteDiv.removeChild();
+  deleteDiv.innerHTML = "";
+  // deleteDiv.removeChild();
   return deleteDiv;
-
 }
-  const buttonAdd = document.querySelector('[data-create]');
-  const buttonRemove = document.querySelector('[data-destroy]');
+
+
   buttonAdd.addEventListener('click', (event) => {
     event.preventDefault();
-
+    const amount = parseInt(input.value);
+    createBoxes(amount);
   });
+  
+buttonRemove.addEventListener('click', destroyBoxes);
