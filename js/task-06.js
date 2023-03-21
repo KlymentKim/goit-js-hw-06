@@ -6,7 +6,7 @@ console.log(validationInput);
 
 validationInput.addEventListener('input',(event) => {
     const inputLength = parseInt(event.target.getAttribute('data-length'));
-    const valueLength = event.target.value;
+    const valueLength = event.target.value.length;
 
     if (valueLength === inputLength) {
         event.target.classList.add('valid');
