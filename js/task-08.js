@@ -10,7 +10,7 @@ loginForm.addEventListener('submit', (event) => {
     // Заборонити перезавантаження сторінки під час відправлення форми
     event.preventDefault();  
     
-    const emailInput = loginForm.elements.email.value;
+    const emailInput = loginForm.elements.email;
     const passwordInput = loginForm.elements.password;
 
       // Перевірити, чи заповнені всі поля
