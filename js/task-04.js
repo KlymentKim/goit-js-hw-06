@@ -9,11 +9,11 @@ const counterValueElement = document.getElementById('value');
 
 let counterValue = 0;
 dicrementButtonClickListener.addEventListener('click', () => { 
-    counterValue--;
+    counterValue-=1;
     counterValueElement.textContent = counterValue;
 });
 
 incrementButtonClickListener.addEventListener('click', () => {
-    counterValue++;
+    counterValue+=1;
     counterValueElement.textContent = counterValue;
 });
